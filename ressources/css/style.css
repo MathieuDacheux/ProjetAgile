@@ -1,0 +1,24 @@
+/*  ---------------------------- Suppression du CSS Navigateur ---------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor : white;
+    --sectionOdd : #e63946;
+    --sectionEven : #457b9d;
+}
+
+/* ---------------------------- Construction du header ---------------------------- */
+
+.containerNav {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--sectionOdd);
+}
