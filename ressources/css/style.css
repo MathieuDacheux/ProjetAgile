@@ -39,7 +39,7 @@ header {
 }
 
 .containerHeader {
-    height: 100vh;
+    height: 85vh;
     width: 85vw;
     display: flex;
     justify-content: center;
@@ -271,4 +271,3 @@ header {
     color: var(--textColor);
     text-align: center;
 }
-
