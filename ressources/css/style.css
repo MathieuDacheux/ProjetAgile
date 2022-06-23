@@ -204,12 +204,14 @@ header {
 .productsText h2 {
     font-size: 2em;
     text-transform: uppercase;
+    padding-bottom: 2%;
     color: var(--textColor);
 }
 
-.productsText p {
+.productsText > p {
     font-size: 1.1em;
     color: var(--textColor);
+    text-align: center;
 }
 
     /* ---------------------------- Block Cards  ---------------------------- */
@@ -217,9 +219,10 @@ header {
 .cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 85vw;
+    padding: 3% 0%;
 }
 
     /* ---------------------------- CSS Cards  ---------------------------- */
