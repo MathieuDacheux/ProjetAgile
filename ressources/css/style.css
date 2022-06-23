@@ -181,9 +181,21 @@ header {
     color: black;
 }
 
-.containerPresentationRight p {
-    font-size: 1.1em;
+.containerPresentationText {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.containerPresentationTittle h2 {
+    text-transform: uppercase;
+    font-size: 2em;
     color: black;
+}
+
+.containerPresentationText p {
+    font-size: 1.2em;
+    color: black;
+    padding-top: 4%;
 }
 
 /* ---------------------------- Produits ---------------------------- */
@@ -269,17 +281,16 @@ header {
 .containerCardsText {
     padding: 0% 5% 5% 5%;
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
 }
 
-.containerPresentationTittle h2 {
+.containerCardsText h3 {
+    color: white;
     text-transform: uppercase;
-    font-size: 2em;
-    color: black;
 }
 
-.containerPresentationText p {
-    font-size: 1.2em;
-    color: black;
-    padding-top: 4%;
+.containerCardsText p {
+    color: white;
+    text-align: center;
 }
