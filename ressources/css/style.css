@@ -84,7 +84,25 @@ header {
 }
 
 
-    /* ---------------------------- HeroBanner ---------------------------- */
+/* ---------------------------- HeroBanner ---------------------------- */
+
+.containerHeader {
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.containerHeader {
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 .heroBanner {
     display: flex;
@@ -127,7 +145,8 @@ header {
     width: 100vw;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
     /* ---------------------------- Flexibilité du container  ---------------------------- */
@@ -159,19 +178,32 @@ header {
 
 .containerPresentationRight {
     display: flex;
-    flex-flow: row wrap;
-    width: 50%
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 50%;
 }
 
-.containerPresentationRight h2 {
+.containerPresentationTittle {
+    text-transform: uppercase;
+    color: black;
+}
+
+.containerPresentationText {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.containerPresentationTittle h2 {
     text-transform: uppercase;
     font-size: 2em;
     color: black;
 }
 
-.containerPresentationRight p {
-    font-size: 1.1em;
+.containerPresentationText p {
+    font-size: 1.2em;
     color: black;
+    padding-top: 4%;
 }
 
 /* ---------------------------- Produits ---------------------------- */
@@ -257,17 +289,16 @@ header {
 .containerCardsText {
     padding: 0% 5% 5% 5%;
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 .containerCardsText h3 {
+    color: white;
     text-transform: uppercase;
-    color: var(--textColor);
-    padding-bottom: 3%;
 }
 
 .containerCardsText p {
-    color: var(--textColor);
+    color: white;
     text-align: center;
 }
