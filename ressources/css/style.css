@@ -173,3 +173,102 @@ header {
     font-size: 1.1em;
     color: black;
 }
+
+/* ---------------------------- Produits ---------------------------- */
+
+    /* ---------------------------- Flexibilité de la section  ---------------------------- */
+
+#products {
+    width: 100vw;
+    height: auto;
+    background-color: var(--sectionEven);
+    display: flex;
+    justify-content: center;
+}
+
+.containerProducts {
+    display: flex;
+    width: 85vw;
+    flex-flow: row wrap;
+    padding: 3%;
+}
+
+    /* ---------------------------- Textes  ---------------------------- */
+
+.productsText {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.productsText h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    color: var(--textColor);
+}
+
+.productsText > p {
+    font-size: 1.1em;
+    color: var(--textColor);
+    text-align: center;
+}
+
+    /* ---------------------------- Block Cards  ---------------------------- */
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    padding: 3% 0%;
+}
+
+    /* ---------------------------- CSS Cards  ---------------------------- */
+
+.containerCards {
+    width: 300px;
+    height: 500px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 1%;
+}
+
+.containerCardsImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 5%;
+}
+
+.cardsImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.containerCardsText {
+    padding: 0% 5% 5% 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.containerCardsText h3 {
+    text-transform: uppercase;
+    color: var(--textColor);
+    padding-bottom: 3%;
+}
+
+.containerCardsText p {
+    color: var(--textColor);
+    text-align: center;
+}
+
