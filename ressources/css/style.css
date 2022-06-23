@@ -87,6 +87,15 @@ header {
     flex-flow: row wrap;
 }
 
+.containerHeader {
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 .heroBanner {
     display: flex;
     justify-content: center;
