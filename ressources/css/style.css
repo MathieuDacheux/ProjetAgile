@@ -142,7 +142,7 @@
   /* ---------------------------- Flexibilité de la section  ---------------------------- */
   
   #presentation {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -153,8 +153,8 @@
   
   .containerPresentation {
     display: flex;
-    width: 85vw;
-    padding: 3%;
+    width: 85%;
+    padding: 3% 0%;
   }
   
   /* ---------------------------- Container gauche  ---------------------------- */
@@ -318,7 +318,7 @@
   #form {
     width: 100%;
     height: auto;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
   }
   
   /* ---------------------------- Tittle  ----------------------------  */
@@ -430,7 +430,7 @@
   
   footer {
       background-color: var(--sectionOdd);
-      height: 10vh;
+      height: 100px;
       width: 100%;
       display: flex;
       align-items: center;
