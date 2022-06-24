@@ -145,8 +145,9 @@ header {
 
 .containerPresentation {
     display: flex;
-    width: 85%;
-    padding: 3%
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 3%;
 }
 
     /* ---------------------------- Container gauche  ---------------------------- */
@@ -159,8 +160,8 @@ header {
 }
 
 .containerPresentationLeft img {
-    width: 80%;
-    height: 650px;
+    width: 90%;
+    height: 600px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -172,7 +173,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width: 50%;
 }
 
@@ -230,6 +231,7 @@ header {
     text-transform: uppercase;
     padding-bottom: 2%;
     color: var(--textColor);
+    text-align: center;
 }
 
 .productsText > p {
@@ -282,7 +284,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    height: 33%;
+    height: 30%;
     padding: 0% 2%;
 }
 
