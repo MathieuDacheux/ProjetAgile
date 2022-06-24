@@ -3,7 +3,8 @@
 :root {
     --textColor : white;
     --sectionOdd : #e63946;
-    --sectionEven : #457b9d;
+    --sectionEven : #1d3557;
+    --cardsColor : #457b9d;
 }
 
 /*  ---------------------------- CSS Global ---------------------------- */
@@ -14,11 +15,14 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------------------------- Construction du header ---------------------------- */
 
 header {
-    background-image: url('../images/herobanner.jpeg');
-    background-image: url('../images/herobanner.jpeg');
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../images/herobanner.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,28 +32,19 @@ header {
     flex-flow: column wrap;
 }
 
+
     /* ---------------------------- NavBar ---------------------------- */
 
 .containerNavBox {
     height: 15vh;
     width: 95vw;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
 }
 
-.containerHeader {
-    height: 85vh;
-    width: 85vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
 .containerNav {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--sectionOdd);
     width: 100vw;
     height: 10vh;
@@ -58,7 +53,6 @@ header {
 
 .containerNavLogo {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     width: 50%;
     padding-left: 1.5%;
@@ -70,30 +64,28 @@ header {
 
 .containerNavLinks {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     width: 50%;
     padding-right: 1.5%;
+}
+
+.containerNavLinks nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .containerNavLinks nav a {
     text-decoration: none;
     color: var(--textColor);
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    margin-left: 5%;
 }
 
 
 /* ---------------------------- HeroBanner ---------------------------- */
-
-.containerHeader {
-    height: 85vh;
-    width: 85vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
 
 .containerHeader {
     height: 85vh;
@@ -142,8 +134,8 @@ header {
     /* ---------------------------- Flexibilité de la section  ---------------------------- */
 
 #presentation {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -153,8 +145,9 @@ header {
 
 .containerPresentation {
     display: flex;
-    width: 85vw;
-    padding: 3%
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 3%;
 }
 
     /* ---------------------------- Container gauche  ---------------------------- */
@@ -167,8 +160,8 @@ header {
 }
 
 .containerPresentationLeft img {
-    width: 80%;
-    height: auto;
+    width: 90%;
+    height: 600px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -180,7 +173,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width: 50%;
 }
 
@@ -211,8 +204,8 @@ header {
     /* ---------------------------- Flexibilité de la section  ---------------------------- */
 
 #products {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 800px;
     background-color: var(--sectionEven);
     display: flex;
     justify-content: center;
@@ -220,8 +213,8 @@ header {
 
 .containerProducts {
     display: flex;
-    width: 85vw;
     flex-flow: row wrap;
+    justify-content: center;
     padding: 3%;
 }
 
@@ -238,6 +231,7 @@ header {
     text-transform: uppercase;
     padding-bottom: 2%;
     color: var(--textColor);
+    text-align: center;
 }
 
 .productsText > p {
@@ -253,7 +247,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 85vw;
+    width: 100%;
     padding: 3% 0%;
 }
 
@@ -261,13 +255,12 @@ header {
 
 .containerCards {
     width: 300px;
-    height: 500px;
-    background-color: hsl(216, 50%, 16%);
+    height: 550px;
+    background-color: var(--cardsColor);
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 1%;
 }
 
 .containerCardsImg {
@@ -276,21 +269,23 @@ header {
     justify-content: center;
     width: 300px;
     height: 300px;
-    padding: 5%;
+    padding: 4%;
 }
 
 .cardsImg {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
 .containerCardsText {
-    padding: 0% 5% 5% 5%;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
+    height: 30%;
+    padding: 0% 2%;
 }
 
 .containerCardsText h3 {
@@ -302,18 +297,62 @@ header {
     color: white;
     text-align: center;
 }
-    /* ---------------------------- Formulaire ---------------------------- */
+
+/* ---------------------------- Formulaire  ----------------------------  */
+
 #form {
+    width: 100%;
+    height: 800px;
+}
+
+.formTitle {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3%;
+}
+
+.formTitle h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.containerFormLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFormRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* #form {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-around;
     align-items: center;
 }
+
 .containerForm {
     display: flex;
-    width: 85%;
-    padding: 3%
+    width: 100%;
+    padding: 3%;
 }
 .formText {
     display: flex;
@@ -362,4 +401,4 @@ input[type=submit] {
     border-radius: 15px;
     background-color: #e63946;
     color: white;
-}
+} */
