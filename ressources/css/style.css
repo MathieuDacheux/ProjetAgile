@@ -302,3 +302,64 @@ header {
     color: white;
     text-align: center;
 }
+    /* ---------------------------- Formulaire ---------------------------- */
+#form {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerForm {
+    display: flex;
+    width: 85%;
+    padding: 3%
+}
+.formText {
+    display: flex;
+    align-items: flex-start;    
+}
+.containerFormLeft {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.containerFormRight {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+.containerFieldset {
+    height: 150%;
+    width: 150%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #457b9d; 
+    border-radius: 15px;   
+}
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: #457b9d;
+    color: white;
+    border-radius: 15px;
+}
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+    background-color: #457b9d;
+    color: white;
+}
+input[type=submit] {
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e63946;
+    color: white;
+}
