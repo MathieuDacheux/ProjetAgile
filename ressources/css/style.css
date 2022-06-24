@@ -203,7 +203,7 @@ header {
     /* ---------------------------- Flexibilité de la section  ---------------------------- */
 
 #products {
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: var(--sectionEven);
     display: flex;
@@ -212,8 +212,9 @@ header {
 
 .containerProducts {
     display: flex;
-    width: 85vw;
+    width: 85%;
     flex-flow: row wrap;
+    justify-content: center;
     padding: 3%;
 }
 
@@ -245,8 +246,8 @@ header {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 85vw;
-    padding: 3% 0%;
+    width: 85%;
+    padding-top: 3%;
 }
 
     /* ---------------------------- CSS Cards  ---------------------------- */
@@ -259,6 +260,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
 }
 
 .containerCardsImg {
