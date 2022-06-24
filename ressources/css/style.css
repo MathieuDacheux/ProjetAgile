@@ -212,7 +212,6 @@ header {
 
 .containerProducts {
     display: flex;
-    width: 85%;
     flex-flow: row wrap;
     justify-content: center;
     padding: 3%;
@@ -246,8 +245,8 @@ header {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 85%;
-    padding-top: 3%;
+    width: 100%;
+    padding: 3% 0%;
 }
 
     /* ---------------------------- CSS Cards  ---------------------------- */
@@ -260,7 +259,6 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
 }
 
 .containerCardsImg {
