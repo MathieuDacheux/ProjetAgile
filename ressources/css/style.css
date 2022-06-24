@@ -335,42 +335,10 @@ header {
 .containerFormRight {
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-/* #form {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.containerForm {
-    display: flex;
-    width: 100%;
-    padding: 3%;
-}
-.formText {
-    display: flex;
-    align-items: flex-start;    
-}
-.containerFormLeft {
-    width: 40%;
-    height: 50%;
-    display: flex;
     justify-content: flex-start;
-}
-.containerFormRight {
-    width: 40%;
-    height: 50%;
-    display: flex;
-    justify-content: space-around; 
     align-items: center;
 }
+
 .containerFieldset {
     height: 150%;
     width: 150%;
@@ -379,6 +347,7 @@ header {
     background-color: #457b9d; 
     border-radius: 15px;   
 }
+
 legend {
     padding: 0px 3px;
     font-weight: bold;
@@ -387,6 +356,7 @@ legend {
     color: white;
     border-radius: 15px;
 }
+
 label {
     width: 110px;
     display: inline-block;
@@ -395,10 +365,11 @@ label {
     background-color: #457b9d;
     color: white;
 }
+
 input[type=submit] {
     width: 150px;
     padding: 10px;
     border-radius: 15px;
     background-color: #e63946;
     color: white;
-} */
+} 
