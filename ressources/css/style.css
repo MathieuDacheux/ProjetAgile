@@ -43,6 +43,7 @@ header {
     justify-content: center;
 }
 
+
 .containerNav {
     display: flex;
     background-color: var(--sectionOdd);
@@ -127,6 +128,11 @@ header {
     color: white;
     padding: 1.5%;
     border-radius: 15px;
+    transition: .5s;
+}
+
+.heroBannerButton:hover {
+    background-color: #1d3557;
 }
 
 /* ---------------------------- Presentation ---------------------------- */
@@ -134,8 +140,8 @@ header {
     /* ---------------------------- Flexibilité de la section  ---------------------------- */
 
 #presentation {
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -145,9 +151,8 @@ header {
 
 .containerPresentation {
     display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding: 3%;
+    width: 85vw;
+    padding: 3%
 }
 
     /* ---------------------------- Container gauche  ---------------------------- */
@@ -160,10 +165,11 @@ header {
 }
 
 .containerPresentationLeft img {
-    width: 90%;
-    height: 600px;
+    width: 80%;
+    height: 650px;
     object-fit: cover;
     border-radius: 15px;
+    filter: ;
 }
 
     /* ---------------------------- Container droit ---------------------------- */
@@ -173,7 +179,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 50%;
 }
 
@@ -205,7 +211,7 @@ header {
 
 #products {
     width: 100%;
-    height: 800px;
+    height: auto;
     background-color: var(--sectionEven);
     display: flex;
     justify-content: center;
@@ -213,6 +219,7 @@ header {
 
 .containerProducts {
     display: flex;
+    width: 85%;
     flex-flow: row wrap;
     justify-content: center;
     padding: 3%;
@@ -231,7 +238,6 @@ header {
     text-transform: uppercase;
     padding-bottom: 2%;
     color: var(--textColor);
-    text-align: center;
 }
 
 .productsText > p {
@@ -247,20 +253,29 @@ header {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    padding: 3% 0%;
+    width: 85%;
+    padding-top: 3%;
 }
 
     /* ---------------------------- CSS Cards  ---------------------------- */
 
 .containerCards {
     width: 300px;
-    height: 550px;
+    height: 500px;
     background-color: var(--cardsColor);
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    transition: .5s;
+    
+}
+
+.containerCards:hover {
+    transform: translate(-15px, 5px);
+    box-shadow: 10px 10px 13px 2px #7da3ba;
+    -webkit-box-shadow: 10px 10px 13px 2px #7da3ba;
+    -moz-box-shadow: 10px 10px 13px 2px #7da3ba;
 }
 
 .containerCardsImg {
@@ -284,16 +299,135 @@ header {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    height: 30%;
     padding: 0% 2%;
 }
 
 .containerCardsText h3 {
     color: white;
     text-transform: uppercase;
+    padding-bottom: 3%;
 }
 
 .containerCardsText p {
     color: white;
     text-align: center;
 }
+
+/* ---------------------------- Formulaire  ----------------------------  */
+
+    /* ---------------------------- Flexibilité de la section  ----------------------------  */
+
+
+    #form {
+        width: 100%;
+        height: 800px;
+    }
+    
+        /* ---------------------------- Tittle  ----------------------------  */
+    
+    .formTitle {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 3%;
+    }
+    
+    .formTitle h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+        /* ---------------------------- Container Form  ----------------------------  */
+    
+    
+    .containerForm {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+        /* ---------------------------- Container Gauche  ----------------------------  */
+    
+    
+    .containerFormLeft {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .containerFormLeft iframe {
+        border-radius: 15px;
+    }
+    
+        /* ---------------------------- Container Droit  ----------------------------  */
+    
+    .containerFormRight {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+        /* ---------------------------- Formulaire  ----------------------------  */
+    
+    .blockForm {
+        background-color: var(--cardsColor);
+        height: 450px;
+        width: 600px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+    
+    .blockForm div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1.5%;
+    }
+    
+    label {
+        display: flex;
+        justify-content: flex-start;
+        width: 25%;
+        color: var(--textColor);
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    
+    input {
+        width: 50%;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+    }
+        
+        /* ---------------------------- Button  ----------------------------  */
+    
+    
+    .buttonFieldset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .buttonFieldset input {
+        background-color: var(--sectionOdd);
+        cursor: pointer;
+        padding: 2% 0;
+        border: none;
+        border-radius: 15px;
+        text-transform: uppercase;
+        color: var(--textColor);
+        transition: .5s;
+    }
+    
+    .buttonFieldset input:hover {
+        background-color: #1d3557;
+    }
+    
