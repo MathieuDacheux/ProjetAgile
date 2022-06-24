@@ -317,7 +317,8 @@ header {
 }
 .formText {
     display: flex;
-    align-items: flex-start;    
+    align-items: flex-start;
+    text-transform: uppercase;    
 }
 .containerFormLeft {
     width: 40%;
@@ -362,4 +363,10 @@ input[type=submit] {
     border-radius: 15px;
     background-color: #e63946;
     color: white;
+}
+.footer {
+    display: flex;
+    width: auto;
+    height: 150px;
+    background-color: #e63946;
 }
