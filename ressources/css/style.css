@@ -391,6 +391,9 @@ input {
     padding: 5px;
     border: none;
 }
+    
+    /* ---------------------------- Button  ----------------------------  */
+
 
 .buttonFieldset {
     display: flex;
