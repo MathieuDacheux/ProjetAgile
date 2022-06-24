@@ -43,7 +43,6 @@ header {
     justify-content: center;
 }
 
-
 .containerNav {
     display: flex;
     background-color: var(--sectionOdd);
