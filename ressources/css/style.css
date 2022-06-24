@@ -369,4 +369,6 @@ input[type=submit] {
     width: auto;
     height: 150px;
     background-color: #e63946;
+    align-items: center;
+    justify-content: space-around;
 }
