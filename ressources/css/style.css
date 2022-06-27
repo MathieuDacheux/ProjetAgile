@@ -241,7 +241,7 @@
   }
   
   .productsText > p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--textColor);
     text-align: center;
   }
@@ -270,12 +270,6 @@
     transition: 0.5s;
   }
   
-  .containerCards:hover {
-    transform: translate(-15px, 5px);
-    box-shadow: 10px 10px 13px 2px #7da3ba;
-    -webkit-box-shadow: 10px 10px 13px 2px #7da3ba;
-    -moz-box-shadow: 10px 10px 13px 2px #7da3ba;
-  }
   
   .containerCardsImg {
     display: flex;
@@ -310,6 +304,7 @@
   .containerCardsText p {
     color: white;
     text-align: center;
+    font-size: 1.2em;
   }
   
   /* ---------------------------- Formulaire  ----------------------------  */
